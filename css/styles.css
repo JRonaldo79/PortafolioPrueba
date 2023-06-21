@@ -28,7 +28,7 @@ body{
 }
 
 .contenedor{
-    width: 80rem;
+    max-width: 120rem;
     margin: 0 auto;
 }
 
@@ -38,7 +38,14 @@ body{
 
 .navegacion-principal {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
+}
+
+@media (min-width:768px) {
+    .navegacion-principal {
+        flex-direction:row;
+    }
 }
 
 .navegacion-principal a {
